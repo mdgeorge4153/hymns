@@ -9,7 +9,7 @@ services at [The First Presbyterian Church of Ithaca, NY](https://www.firstpresi
 This tutorial is targeted at someone who is technically savvy but doesn't
 necessarily have experience editing video or music files.
 
-TODO: The example output video is available here:
+The example output video is available [here](https://youtu.be/xXDTDvyrqU8).
 
 TODO: There is a video tutorial of the process here:
 
