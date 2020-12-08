@@ -13,7 +13,8 @@ The example output video is available [here](https://youtu.be/xXDTDvyrqU8).
 
 TODO: There is a video tutorial of the process here:
 
-TODO: You can download a zip file with all of these example files from github by clicking ...
+You can download a zip file with all of these example files
+[here](https://github.com/mdgeorge4153/hymns/archive/main.zip).
 
 I'm interested in improving this tutorial and helping people make hymn videos,
 so if you have questions or comments or find a better way of doing something,
