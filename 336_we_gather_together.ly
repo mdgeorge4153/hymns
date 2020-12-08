@@ -3,17 +3,9 @@
 %
 % The music and text was taken from the Presbyterian Hymnal (C) 1990, Hymn 559
 
-
 \version "2.18.2"
 
-
-global = {
-	\autoBeamOff
-	\time 3/4
-	\key c \major
-	\partial 4
-	\repeat unfold 12 { s4 | s2. | s | s | } \alternative { { s2 \bar "" \break } { s2. \bar "|." } }
-}
+hymntitle = "Hymn #336: We Gather Together"
 
 % There are 4 systems, here labeled A, B, C, and D; each has 4 voices and 3 verses
 
@@ -75,6 +67,16 @@ tenorNotes   = { \repeat unfold 3 { \tenorNotesA   \tenorNotesB   \tenorNotesC  
 bassNotes    = { \repeat unfold 3 { \bassNotesA    \bassNotesB    \bassNotesC    } \alternative { \bassNotesDOne    \bassNotesDTwo    \bassNotesDThree    } }
 verses       = { \verseOne \verseTwo \verseThree }
 
+% this section gives the broad structure of the music
+
+global = {
+	\autoBeamOff
+	\time 3/4
+	\key c \major
+	\partial 4
+	\repeat unfold 12 { s4 | s2. | s | s | } \alternative { { s2 \bar "" \break } { s2. \bar "|." } }
+}
+
 % And here is the score:
 
 \header {
@@ -84,7 +86,7 @@ verses       = { \verseOne \verseTwo \verseThree }
 		\with-dimensions #'(0 . 0) #'(0 . 0)
 		\with-color #(rgb-color 0.99 0.98 0.9)
 		\filled-box #'(-1000 . 1000) #'(-1000 . 4000) #0
-		"#336: We Gather Together"
+		\hymntitle
 	}
 }
 
