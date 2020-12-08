@@ -48,8 +48,11 @@ lilypond tutorial.
 
     TODO: such as ...
 
-Let's look at the file `36_for_the_fruit.ly`.  There's a few lines of
-boilerplate that you can safely ignore:
+The remainder of this tutorial focuses on the example file
+`36_for_the_fruit.ly`; you should open that file now and refer to it as you're
+reading this tutorial.
+
+There's a few lines of boilerplate that you can safely ignore:
 
  - Lines that begin with % are just there for your information; lilypond
    ignores them completely.
@@ -77,8 +80,9 @@ Compare this with the corresponding part of the generated music:
 
 Looking at the music, you'll notice that the first measure contains a dotted
 quarter f note, then an eighth e note, a quarter d note, and a quarter f note.
-These correspond to the first 4 notes in the curly braces: f4. is an f that is a dotted quarter (4.),
-then e8 is an e that is an eighth note, then the d4 is a d that is a quarter note.
+These correspond to the first 4 notes in the curly braces: f4. is an f that is
+a dotted quarter (4.), then e8 is an e that is an eighth note, then the d4 is a
+d that is a quarter note.
 
 Lilypond uses `es` to indicate flatted notes and `is` to indicate sharp notes.
 You need to enter the actual note that is played, not the way it is indicated.
