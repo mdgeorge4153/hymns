@@ -267,6 +267,9 @@ selected "YouTube HD".  Select a video profile that matches the one you chose
 above, set the desired quality level, and click export to produce a video file.
 It may take a few minutes or more depending on how fast your computer is.
 
+![Export dialog.  Select "Web" for "Profile", then the target, format, and quality](tutorial/export.png)
+
+That's all there is to it!
 
 Credits
 =======
