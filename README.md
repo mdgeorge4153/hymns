@@ -102,8 +102,9 @@ or by selecting "Import Files" from the File menu.
 
 You will also need to make the "Properties" panel visible.  In the menu, select
 View > Views > Advanced View.  This will show several additional panels, but we
-only need the "Properties" panel.  If you want, you can rearrange the panels by
-clicking on their titles and dragging.  Here's how I set mine up:
+only need the "Properties" panel.  If you want, you can close some of the
+panels by clicking the x's in the corner, or rearrange them by clicking on
+their titles and dragging.  Here's how I set my view up:
 
 ![OpenShot advanced view, with properties, project files, preview, and timeline showing](tutorial/openshot-setup.png)
 
@@ -112,15 +113,19 @@ Click the "Choose Profile" button:
 
 ![Choose profile button](tutorial/openshot-choose-profile.png)
 
-There are a lot of profiles to pick from.  You probably want HD 720p 24fps.  If
-you want a widescreen format, choose HD 1080p 24fps.  If you're editing this into
-a larger video, choose whatever format the larger video is using.
+There are a lot of profiles to pick from.  You probably want HD 1080p 24fps.
+If you want a widescreen format, choose HD 720p 24fps.  If you're making the
+hymn as part of a larger video, choose whatever format the larger video is
+using.
 
-Save the project (Ctrl+S or File > Save project) and give it a name.  This doesn't
-generate a video.  Instead, it saves your OpenShot setup.
+Save the project (Ctrl+S or File > Save project) and give it a name.  This
+doesn't generate a video.  Instead, it saves your OpenShot setup.
 
 A bit about keyframes and animation
 -----------------------------------
+
+Before diving in to editing the video, let's talk about a few of the important
+animation concepts that you will use.
 
 Most animations are based on _properties_, _keyframes_, and _interpolation_.
 
@@ -180,11 +185,11 @@ You should see the middle of your music filling the video preview.
 Scrolling the image
 -------------------
 
-At the beginning of the song, we want the image to be at the top.   With the
-blue pointer set at 0:00 on the timeline and the image selected, find the
-"Location Y" property in the properties panel.  It should be set at 0.00; if you
-drag it to the left or the right, you'll move the page up or down in the preview
-window.
+At the beginning of the song, we want the image to be positioned so that the
+top is visible.   With the blue pointer set at 0:00 on the timeline and the
+image selected, find the "Location Y" property in the properties panel.  By
+default it's value is 0.00; dragging to the left or the right will move the
+page up or down in the preview window.
 
 Unfortunately, it seems you can't drag it all the way to the top.  However, you
 can enter numeric values.  Play around with it a bit to find where you want to
@@ -199,7 +204,7 @@ set a keyframe at the beginning.  What remains is to set the other keyframes.
 We'll start by marking the points on the timeline when we want to scroll.  The
 add marker button adds a marker at the current location on the timeline:
 
-![Marker button](tutorial/marker.png)
+![Marker button](tutorial/marker-button.png)
 
 Click play on the preview window, and then click the marker whenever you want
 to move the page (if you want, you can remove a marker by right clicking on it).
@@ -221,7 +226,9 @@ left key about 6 times, you move a quarter second earlier than the marker.  With
 the cursor there (and the image still selected on the timeline), right click on
 the "Location Y" property name and select "Insert Keyframe".  You'll see that the
 property turns green to indicate that there is a keyframe on the current frame,
-and a little green mark appears on the timeline.
+and a little green mark appears on the timeline.  Properties appear green if
+there is a keyframe on the current frame, and blue if there is a keyframe on a
+different frame.
 
 ![Image showing property and green mark](tutorial/keyframe.png)
 
@@ -244,6 +251,21 @@ transition.  You should set the "Location Y" property for the keyframe before
 the transition to the same value as the previous keyframe, and for the
 post-transition keyframe the value should be the same as the next keyframe.
 
+The remaining transiitons work the same way.  Move a few frames to the left of
+your next marker and insert a keyframe for the "Location Y" property.  Then
+move a few frames to the right and change the "Location Y" property to the
+next position.  If necessary, change the curve to "Ease".
+
+Once you're happy with your video, it is time to export it.  Click the big
+red export button on the toolbar:
+
+![Export button](tutorial/export-button.png)
+
+Under "Profile", select "Web".  This will change the "Target" menu so that it
+has options for many common websites.  We post our videos on YouTube, so I've
+selected "YouTube HD".  Select a video profile that matches the one you chose
+above, set the desired quality level, and click export to produce a video file.
+It may take a few minutes or more depending on how fast your computer is.
 
 
 Credits
