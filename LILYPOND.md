@@ -181,11 +181,12 @@ There are two new things in this part:
 After creating these "large" variables, I've created one more part containing
 the annotations that go with all of the musical parts.  I've called this
 variable "global".  All of the music has the same time signature and key, and
-I've chosen to turn off the automatic beams connecting 8th notes:
+I've changed the way that beams on 8th notes are connected:
 
     \time 3/4
     \key c \major
-    \autoBeamOff
+    \set Timing.baseMoment  = #(ly:make-moment 1/4)
+    \set Timing.beamExceptions = #'()
 
 The next portion of the "global" section establishes the double
 bar lines between verses and at the end:
