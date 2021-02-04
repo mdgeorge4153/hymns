@@ -59,7 +59,8 @@ verses       = { \verseOne \verseTwo \verseThree }
 global = {
 	\time 4/4
 	\key f \major
-	\autoBeamOff
+  \set Timing.baseMoment  = #(ly:make-moment 1/4)
+  \set Timing.beamExceptions = #'()
 	\repeat unfold 3 {
 		\repeat unfold 16 { s1 | }
 	} \alternative { { \bar "||" } { \bar "|." } }

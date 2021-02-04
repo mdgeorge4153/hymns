@@ -70,7 +70,8 @@ verses       = { \verseOne \verseTwo \verseThree }
 % this section gives the broad structure of the music
 
 global = {
-	\autoBeamOff
+  \set Timing.baseMoment  = #(ly:make-moment 1/4)
+  \set Timing.beamExceptions = #'()
 	\time 3/4
 	\key c \major
 	\partial 4
