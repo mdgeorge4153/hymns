@@ -1,6 +1,6 @@
-default:
+default: generated/336_we_gather_together.png
 
-.PHONY: default
+.PHONY: default all
 
 generated/%.midi generated/%.pdf: %.ly
 	mkdir -p generated && cd generated && lilypond ../$^
