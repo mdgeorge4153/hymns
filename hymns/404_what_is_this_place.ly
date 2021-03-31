@@ -5,7 +5,7 @@
 %
 % Taken from "Glory to God, the Presbyterian Hymnal", Hymn # 404
 
-\version "2.18.2"
+\version "2.20.0"
 
 % There are 4 lines, here labeled A, B, C, and D; each has 4 voices and 3 verses
 
@@ -62,8 +62,10 @@ global = {
   \set Timing.baseMoment  = #(ly:make-moment 1/4)
   \set Timing.beamExceptions = #'()
 	\repeat unfold 3 {
-		\repeat unfold 14 { s1 | }
-	} \alternative { { \bar "||" } { \bar "|." } }
+		\repeat unfold 6 { s1 | }
+    \repeat unfold 6 { s1 | }
+    \repeat unfold 2 { s1 | }
+	} \alternative { { \bar "||" \break } { \bar "|." } }
 }
 
 % And here is the score:
@@ -118,6 +120,7 @@ hymntitle = "Hymn #404: What is This Place"
 			\override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/24)
 			\override LyricText.font-size = 2.0
 			\override LyricText.font-name = #"DejaVu Sans"
+      \override LyricText.word-space = #5.0
 			\override BarNumber.break-visibility = ##(#f #f #f)
 		}
 	}

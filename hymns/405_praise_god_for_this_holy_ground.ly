@@ -10,17 +10,22 @@
 % There are 4 lines, here labeled A, B, C, and D; each has 4 voices and 3 verses
 
 sopranoNotesA = \relative c'' { b4 b b gis8( b) | cis4 b e,2 | }
+verseOneA     = \lyricmode    { Praise God for this | hol -- y ground, | }
 verseTwoA     = \lyricmode    { Praise God in whose | word we find | }
 
 sopranoNotesB = \relative c'' { a4. a8 a( gis) fis( e) | fis4 cis b2 | }
+verseOneB     = \lyricmode    { place and peo -- ple, | sight and sound. | \break }
 verseTwoB     = \lyricmode    { food for bod -- y, | soul, and mind. | }
 
 sopranoNotesC = \relative c'  { b4 e8 dis cis2 | cis4 fis8 e dis2 | dis4 gis8 fis e( fis) }
 verseTwoC     = \lyricmode    { Hal -- le -- lu -- jah! | Hal -- le -- lu -- jah! | Hal -- le -- lu -- jah! }
+verseOneC     = \verseTwoC
 
 sopranoNotesD = \relative c'' { gis8( a) | \time 6/4 b4 gis a8( gis) fis( e) fis2 | e1 \bar "|." }
 verseTwoD     = \lyricmode    { God's | good -- ness is e -- ter -- nal. |}
+verseOneD     = \verseTwoD
 
+verseOne     = { \set stanza = "1. " \verseOneA     \verseOneB     \verseOneC     \verseOneD     }
 verseTwo     = { \set stanza = "2. " \verseTwoA     \verseTwoB     \verseTwoC     \verseTwoD     }
 
 sopranoNotes = { \sopranoNotesA \sopranoNotesB \sopranoNotesC \sopranoNotesD }
@@ -36,7 +41,7 @@ global = {
 
 % And here is the score:
 
-hymntitle = "Hymn #405 (verse 2): Praise God for This Holy Ground"
+hymntitle = "Hymn #405 (verse 1): Praise God for This Holy Ground"
 
 \header {
 	tagline = ##f
@@ -56,7 +61,7 @@ hymntitle = "Hymn #405 (verse 2): Praise God for This Holy Ground"
       \voiceOne
       << \global \sopranoNotes >>
     }
-    \addlyrics \verseTwo
+    \addlyrics \verseOne
   }
 
 	\layout {
@@ -92,6 +97,6 @@ hymntitle = "Hymn #405 (verse 2): Praise God for This Holy Ground"
     (padding . 1)
   )
   top-margin = 20
-  left-margin = 20
-  right-margin = 20
+  left-margin = 10
+  right-margin = 10
 }
