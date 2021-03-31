@@ -1,4 +1,4 @@
-default: generated/240_jesus_christ_is_risen_today.png
+default: generated/232_jesus_christ_is_risen_today.png
 
 .PHONY: default
 
