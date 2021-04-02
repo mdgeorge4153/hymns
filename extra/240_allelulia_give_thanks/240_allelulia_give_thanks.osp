@@ -450,7 +450,7 @@
    "waveform": false,
    "file_id": "XGTGN70GJK",
    "title": "240 Alleluia Alleluia with Singers.mp3",
-   "image": "@assets/thumbnail/XGTGN70GJK.png"
+   "image": "thumbnail/XGTGN70GJK.png"
   },
   {
    "alpha": {
@@ -881,7 +881,7 @@
    "waveform": false,
    "file_id": "C1BCNGB69H",
    "title": "240_allelulia_give_thanks-1.png",
-   "image": "@assets/thumbnail/C1BCNGB69H.png"
+   "image": "thumbnail/C1BCNGB69H.png"
   },
   {
    "alpha": {
@@ -1312,7 +1312,7 @@
    "waveform": false,
    "file_id": "03J93H2INZ",
    "title": "240_allelulia_give_thanks-2.png",
-   "image": "@assets/thumbnail/03J93H2INZ.png"
+   "image": "thumbnail/03J93H2INZ.png"
   },
   {
    "alpha": {
@@ -1743,7 +1743,7 @@
    "waveform": false,
    "file_id": "5VAPZ0XAUP",
    "title": "240_allelulia_give_thanks-3.png",
-   "image": "@assets/thumbnail/5VAPZ0XAUP.png"
+   "image": "thumbnail/5VAPZ0XAUP.png"
   },
   {
    "alpha": {
@@ -2174,7 +2174,7 @@
    "waveform": false,
    "file_id": "R0PJFNQQE1",
    "title": "240_allelulia_give_thanks-4.png",
-   "image": "@assets/thumbnail/R0PJFNQQE1.png"
+   "image": "thumbnail/R0PJFNQQE1.png"
   },
   {
    "alpha": {
@@ -2605,7 +2605,7 @@
    "waveform": false,
    "file_id": "HDUSPFUYCT",
    "title": "240_allelulia_give_thanks-5.png",
-   "image": "@assets/thumbnail/HDUSPFUYCT.png"
+   "image": "thumbnail/HDUSPFUYCT.png"
   }
  ],
  "effects": [
@@ -3018,7 +3018,7 @@
    "replace_image": false
   }
  ],
- "export_path": "",
+ "export_path": "/home/mdgeorge/hymns/extra/240_allelulia_give_thanks",
  "import_path": "/home/mdgeorge/hymns/extra/240_allelulia_give_thanks/generated",
  "files": [
   {
@@ -3069,7 +3069,7 @@
    "width": 720,
    "media_type": "audio",
    "id": "XGTGN70GJK",
-   "image": "@assets/thumbnail/XGTGN70GJK.png"
+   "image": "thumbnail/XGTGN70GJK.png"
   },
   {
    "acodec": "",
@@ -3117,7 +3117,7 @@
    "width": 1280,
    "media_type": "image",
    "id": "C1BCNGB69H",
-   "image": "@assets/thumbnail/C1BCNGB69H.png"
+   "image": "thumbnail/C1BCNGB69H.png"
   },
   {
    "acodec": "",
@@ -3165,7 +3165,7 @@
    "width": 1280,
    "media_type": "image",
    "id": "03J93H2INZ",
-   "image": "@assets/thumbnail/03J93H2INZ.png"
+   "image": "thumbnail/03J93H2INZ.png"
   },
   {
    "acodec": "",
@@ -3213,7 +3213,7 @@
    "width": 1280,
    "media_type": "image",
    "id": "5VAPZ0XAUP",
-   "image": "@assets/thumbnail/5VAPZ0XAUP.png"
+   "image": "thumbnail/5VAPZ0XAUP.png"
   },
   {
    "acodec": "",
@@ -3261,7 +3261,7 @@
    "width": 1280,
    "media_type": "image",
    "id": "R0PJFNQQE1",
-   "image": "@assets/thumbnail/R0PJFNQQE1.png"
+   "image": "thumbnail/R0PJFNQQE1.png"
   },
   {
    "acodec": "",
@@ -3309,7 +3309,7 @@
    "width": 1280,
    "media_type": "image",
    "id": "HDUSPFUYCT",
-   "image": "@assets/thumbnail/HDUSPFUYCT.png"
+   "image": "thumbnail/HDUSPFUYCT.png"
   }
  ],
  "duration": 300,
