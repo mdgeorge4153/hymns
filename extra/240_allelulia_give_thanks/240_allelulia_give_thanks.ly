@@ -11,16 +11,11 @@ hymntitle = "Hymn #240: Allelulia, Allelulia! Give Thanks to the Risen Lord"
 % There are 4 lines, here labeled A, B, C, and D; each has 4 voices and 3 verses
 
 sopranoNotesA = \relative c' { b8 b | e4 e fis8 gis | e4 e fis8( gis) | a4 a gis | fis8 e dis4 }
-verseOneA     = \lyricmode   { Al -- le -- lu -- ia, al -- le -- lu -- ia! Give | thanks to the | ris -- en Lord, }
-verseTwoA     = \verseOneA
-verseThreeA   = \verseOneA
+refrainA      = \lyricmode   { Al -- le -- lu -- ia, al -- le -- lu -- ia! Give | thanks to the | ris -- en Lord, }
 verseFourA    = \lyricmode   { Al -- le -- lu -- ia, al -- le -- lu -- ia! Give | thanks to the | ris -- en Lord, }
 
 sopranoNotesB = \relative c' { b8 b | e4 e fis8 gis | e4 e fis8( gis) | a4 b gis8( fis) | e2. | }
-verseOneB     = \lyricmode   { Al -- le -- lu -- ia, al -- le -- lu -- ia! Give | praise to his | name. | }
-verseTwoB     = \verseOneB
-verseThreeB   = \verseOneB
-verseFourB    = \verseOneB
+refrainB      = \lyricmode   { Al -- le -- lu -- ia, al -- le -- lu -- ia! Give | praise to his | name. | }
 
 sopranoNotesC = \relative c''{ b4 b gis | cis2 b4 | a2 gis8( a) | fis2. | }
 verseOneC     = \lyricmode   { Je -- sus is | Lord of | all the | earth. | }
@@ -37,13 +32,13 @@ verseFourD    = \lyricmode   { joy -- ful -- ly sing to our Sav -- ior. }
 
 % We now collect the 4 lines together:
 
-verseOne     = { \set stanza = "1. " \verseOneA     \verseOneB     \verseOneC     \verseOneD     }
-verseTwo     = { \set stanza = "2. " \verseTwoA     \verseTwoB     \verseTwoC     \verseTwoD     }
-verseThree   = { \set stanza = "3. " \verseThreeA   \verseThreeB   \verseThreeC   \verseThreeD   }
-verseFour    = { \set stanza = "4. " \verseFourA    \verseFourB    \verseFourC    \verseFourD    }
+verseOne     = { \set stanza = "1. "   \verseOneC     \verseOneD    \refrainA \refrainB }
+verseTwo     = { \set stanza = "2. "   \verseTwoC     \verseTwoD    \refrainA \refrainB }
+verseThree   = { \set stanza = "3. "   \verseThreeC   \verseThreeD  \refrainA \refrainB }
+verseFour    = { \set stanza = "4. "   \verseFourC    \verseFourD   \refrainA \refrainB }
 
-sopranoNotes = { \repeat unfold 4 { \sopranoNotesA \sopranoNotesB \sopranoNotesC \sopranoNotesD } }
-verses       = { \verseOne \verseTwo \verseThree \verseFour }
+sopranoNotes = { \sopranoNotesA \sopranoNotesB \repeat unfold 4 { \sopranoNotesC \sopranoNotesD \sopranoNotesA \sopranoNotesB } }
+verses       = { \refrainA     \refrainB     \verseOne \verseTwo \verseThree \verseFour }
 
 % this section gives the broad structure of the music
 
@@ -54,16 +49,14 @@ global = {
   \set Timing.beamExceptions = #'()
 
   \partial 4
-  \repeat unfold 3 {
-    s4 | s2. | s2. | s2. | s2  \bar "" \break
-    s4 | s2. | s2. | s2. | s2. \bar "||" \break
-    s2. | s2. | s2. | s2. | \break
-    s2. | s2. | s2. | s2 \bar "||" \pageBreak
-  }
   s4^\markup{ \italic Refrain } | s2. | s2. | s2. | s2  \bar "" \break
-  s4 | s2. | s2. | s2. | s2. \bar "|." \break
-  s2. | s2. | s2. | s2. | \break
-  s2. | s2. | s2. | s2^\markup{ \italic "to Refrain" } \bar "||" \pageBreak
+  s4 | s2. | s2. | s2. | s2. \bar "||" \pageBreak
+  \repeat unfold 4 {
+    s2. | s2. | s2. | s2. | \break
+    s2. | s2. | s2. | s2 \bar "||" \break
+    s4 | s2. | s2. | s2. | s2  \bar "" \break
+    s4 | s2. | s2. | s2. | s2.
+  } \alternative { { \bar "||" \pageBreak } { \bar "|." } }
 }
 
 % And here is the score:

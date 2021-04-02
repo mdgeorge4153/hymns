@@ -1,4 +1,4 @@
-default: generated/240_allelulia_give_thanks.png
+default: generated/240_allelulia_give_thanks-1.png generated/240_allelulia_give_thanks-2.png generated/240_allelulia_give_thanks-3.png generated/240_allelulia_give_thanks-4.png generated/240_allelulia_give_thanks-5.png
 
 .PHONY: default
 
