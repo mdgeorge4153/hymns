@@ -49,7 +49,9 @@ convert pdfs to images:
 
 ### Places where you can find existing hymn images
 
-TODO: if you know of any, let me know!
+The `extra/` directory contains the hymns that I've put together.
+
+TODO: if you know of any others, let me know!
 
 Generating Sheet Music Using lilypond
 -------------------------------------
