@@ -39,7 +39,7 @@ bassNotesC    = \relative c  { e4 a,8 a | d4. dis8 | e e fis fis | b,2 | }
 
 sopranoNotesD = \sopranoNotesA
 altoNotesD    = \relative c' { e8 g fis a | g4 e | cis8 cis dis dis | e2 | }
-verseOneD     = \lyricmode   { love is come a -- gain like | what a -- ris -- ing | green. | }
+verseOneD     = \lyricmode   { love is come a -- gain like | wheat a -- ris -- ing | green. | }
 verseTwoD     = \verseOneD
 verseThreeD   = \verseOneD
 verseFourD    = \verseOneD
